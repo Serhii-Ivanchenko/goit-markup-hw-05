@@ -450,5 +450,42 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-open">
+      <form class="modal">
+        <button class="close-btn" type="button"></button>
+        <h4 class="modal-title">
+          Leave your contacts and we will call you back
+        </h4>
+        <label class="input-label" name="name">
+          <span class="input-name">Name</span>
+          <input class="input-field" type="text" name="name" />
+        </label>
+        <label class="input-label" name="name">
+          <span class="input-name">Phone</span>
+          <input class="input-field" type="tel" name="tel" />
+        </label>
+        <label class="input-label" name="name">
+          <span class="input-name">Email</span>
+          <input class="input-field" type="email" name="email" />
+        </label>
+        <label class="input-label" name="name">
+          <span class="input-name">Comment</span>
+          <textarea
+            class="textarea"
+            name="comment"
+            placeholder="Text input"></textarea>
+        </label>
+        <label class="input-label privacy" name="name">
+          <input class="input-field" type="checkbox" name="privacy" />
+          <span class="input-name"
+            >I accept the terms and conditions of the
+            <a class="privacy-link" href="">Privacy Policy</a></span
+          >
+        </label>
+        <button class="send-btn" type="submit">Send</button>
+      </form>
+    </div>
   </body>
 </html>

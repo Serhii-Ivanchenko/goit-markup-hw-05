@@ -562,16 +562,51 @@ address {
   letter-spacing: 0.04em;
 }
 
-.input-label.privacy {
-  flex-direction: row;
+.checkbox-label {
+  display: flex;
   width: 100%;
+  align-items: center;
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.input-field.privacy {
+.checkbox-icon {
+  flex-shrink: 0;
+  width: 16px;
   height: 16px;
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
 }
 
+.checkbox:checked + .checkbox-icon {
+  background-color: #404bbf;
+  background-image: url(../images/icons/click.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #404bbf;
+}
 .input-name.privacy {
+  margin-bottom: 4px;
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   min-width: 338px;
   margin-left: 8px;
   margin-bottom: 24px;
@@ -591,7 +626,6 @@ address {
   margin-right: auto;
   margin-left: auto;
   color: #fff;
-  /* text-align: center; */
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;

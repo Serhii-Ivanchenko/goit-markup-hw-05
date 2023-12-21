@@ -656,7 +656,6 @@ address {
   margin-bottom: 24px;
 }
 .checkbox-label {
-  display: flex;
   width: 100%;
   align-items: center;
   color: #8e8f99;

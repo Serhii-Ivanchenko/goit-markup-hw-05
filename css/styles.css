@@ -630,6 +630,7 @@ address {
   resize: none;
   padding: 8px 16px;
   border-radius: 4px;
+  color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -665,16 +666,6 @@ address {
   margin-bottom: 24px;
 }
 .checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .checkbox-icon {

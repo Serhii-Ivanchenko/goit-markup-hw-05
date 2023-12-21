@@ -532,20 +532,20 @@
 
           <div class="checkbox-wrapper">
             <input
-              class="checkbox"
+              class="checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true" />
-            <label class="checkbox-label" for="user-privacy"
-              >I accept the terms and conditions of the
+            <label class="checkbox-label" for="user-privacy">
+              <span class="checkbox-icon">
+                <svg class="icon-click" width="16" height="16">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a></label
             >
-            <span class="checkbox-icon">
-              <svg class="icon-click" width="16" height="16">
-                <use href="./images/icons.svg#icon-click"></use>
-              </svg>
-            </span>
           </div>
           <button class="send-btn" type="submit">Send</button>
         </form>

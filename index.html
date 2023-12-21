@@ -479,40 +479,55 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form name="service-order">
-          <label class="input-label">
-            <span class="input-name">Name</span>
+          <div class="input-wrapper">
+            <label class="input-label" for="user-name">Name</label>
             <div class="input">
-              <input class="input-field" type="text" name="name" />
+              <input
+                class="input-field"
+                type="text"
+                name="name"
+                id="user-name" />
               <svg class="input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-          </label>
-          <label class="input-label">
-            <span class="input-name">Phone</span>
+          </div>
+
+          <div class="input-wrapper">
+            <label class="input-label" for="user-phone">Phone</label>
             <div class="input">
-              <input class="input-field" type="tel" name="tel" />
+              <input
+                class="input-field"
+                type="tel"
+                name="tel"
+                id="user-phone" />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-          </label>
-          <label class="input-label">
-            <span class="input-name">Email</span>
+          </div>
+
+          <div class="input-wrapper">
+            <label class="input-label" for="user-email">Email</label>
             <div class="input">
-              <input class="input-field" type="email" name="email" />
+              <input
+                class="input-field"
+                type="email"
+                name="email"
+                id="user-email" />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
             </div>
-          </label>
-          <label class="input-label">
-            <span class="input-name">Comment</span>
-            <textarea
-              class="textarea"
-              name="comment"
-              placeholder="Text input"></textarea>
-          </label>
+          </div>
+
+          <label class="input-label" for="comment">Comment </label>
+          <textarea
+            class="textarea"
+            name="comment"
+            id="comment"
+            placeholder="Text input"></textarea>
+
           <label class="checkbox-label">
             <input class="checkbox" type="checkbox" name="privacy" />
             <span class="checkbox-icon">

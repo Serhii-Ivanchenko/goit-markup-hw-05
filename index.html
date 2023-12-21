@@ -451,7 +451,7 @@
         <div class="subscribe">
           <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-form-field" name="subscribe">
+            <label class="subscribe-form-field">
               <input
                 class="subscribe-input"
                 type="email"
@@ -470,7 +470,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-btn" type="button" aria-label="Modal close button">
           <svg class="icon-close" width="8" height="8">
@@ -479,7 +479,7 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form name="service-order">
-          <label class="input-label" name="name">
+          <label class="input-label">
             <span class="input-name">Name</span>
             <div class="input">
               <input class="input-field" type="text" name="name" />
@@ -488,7 +488,7 @@
               </svg>
             </div>
           </label>
-          <label class="input-label" name="name">
+          <label class="input-label">
             <span class="input-name">Phone</span>
             <div class="input">
               <input class="input-field" type="tel" name="tel" />
@@ -497,7 +497,7 @@
               </svg>
             </div>
           </label>
-          <label class="input-label" name="name">
+          <label class="input-label">
             <span class="input-name">Email</span>
             <div class="input">
               <input class="input-field" type="email" name="email" />
@@ -506,16 +506,20 @@
               </svg>
             </div>
           </label>
-          <label class="input-label" name="name">
+          <label class="input-label">
             <span class="input-name">Comment</span>
             <textarea
               class="textarea"
               name="comment"
               placeholder="Text input"></textarea>
           </label>
-          <label class="checkbox-label" name="name">
+          <label class="checkbox-label">
             <input class="checkbox" type="checkbox" name="privacy" />
-            <span class="checkbox-icon"></span>
+            <span class="checkbox-icon">
+              <svg class="icon-click" width="16" height="16">
+                <use href="./images/icons.svg#icon-click"></use>
+              </svg>
+            </span>
             <span class="checkbox-text">
               I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a>

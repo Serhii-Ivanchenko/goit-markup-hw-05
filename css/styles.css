@@ -426,7 +426,6 @@ address {
 }
 
 .footer-socials-wrapper {
-
 }
 .subscribe {
   margin-left: auto;
@@ -476,7 +475,6 @@ address {
 }
 .subscribe-button-icon {
   fill: #fff;
-
 }
 
 .subscribe-button:hover,
@@ -563,8 +561,8 @@ address {
 .input-label {
   display: flex;
   flex-direction: column;
-  /* margin-bottom: 8px; */
 }
+
 .input-name {
   margin-bottom: 4px;
   color: #8e8f99;
@@ -572,6 +570,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+
 .input {
   position: relative;
 }
@@ -651,21 +650,23 @@ address {
 }
 
 .checkbox-icon {
-  flex-shrink: 0;
-  width: 16px;
-  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 }
+.icon-click {
+  fill: transparent;
+}
 
 .checkbox:checked + .checkbox-icon {
   background-color: #404bbf;
-  background-image: url(../images/icons/click.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: #404bbf;
+  fill: #f4f4fd;
 }
+
 .input-name.privacy {
   margin-bottom: 4px;
   color: #8e8f99;

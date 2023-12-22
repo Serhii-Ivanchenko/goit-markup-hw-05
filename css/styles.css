@@ -692,6 +692,9 @@ address {
   fill: #f4f4fd;
   border: none;
 }
+.checkbox:focus + .checkbox-label > .checkbox-icon {
+  border-color: #4d5ae5;
+} 
 
 .privacy-link {
   color: #4d5ae5;
